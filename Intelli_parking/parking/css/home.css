@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+
+/*THE DAMN SIDEBAR*/
+body{
+	display: flex;
+	overflow-y: hidden;
+}
+h1{
+	font-style: 600;
+}
+p{
+	color: #4C4C6D;
+}
+h2{
+	font-weight: 500;
+}
+h3{
+	font-weight: 500;
+}
+.sidebar{
+	background: #E8F6EF;
+	top: 0;
+	left: 0;
+	height: 100vh;
+
+	width: 20vw;
+	padding: 40px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.profile{
+	background: white;
+	padding: 30px;
+	border-radius: 30px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.08), 4px 4px 12px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+}
+.profile:hover{
+	transform: translateY(-10px);
+}
+.location{
+	background: white;
+	padding: 30px;
+	border-radius: 30px;
+	box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.08), 4px 4px 12px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+}
+.location:hover{
+	transform: translateY(-10px);
+}
+
+
+
+
+
+
+/*THE DAMN PARKINGS*/
+.data{
+	background: #B8DFD8;
+	padding: 40px 5rem 0 5rem;
+	flex: 1;
+}
+.spaces{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.floor{
+	width: 5rem;
+	background:url('arrow.svg') no-repeat;
+	background-position:80% center;
+}
+.floor select{
+	font-weight: 800;
+	background: transparent;
+	line-height: 1;
+	border: 0;
+	padding: 0;
+	border-radius: 20px;
+	width: 120%;
+	position: relative;
+	z-index: 10;
+	font-size: 1.1em;
+}
+.instructions{
+	margin-top: 20px;
+	padding: 15px 0;
+}
+.instructions h1{
+	font-size: 20px;
+}
+.instructions p{
+	font-size: 16px;
+}
+
+
+ul{
+	list-style: none;
+	display: flex;
+	
+}
+li{
+	margin: 10px 40px;
+	padding: 30px;
+	background: white;
+	border-radius: 10px;
+	font-weight: 500;
+	transition: 0.75s;
+	cursor: pointer;
+}
+li:hover{
+	transform: translate(-5px);
+	background: #9FE6A0;
+	border: 1px solid black;
+}
+.part{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
